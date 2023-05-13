@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Case Study - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Case Study</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#a-deep-dive-into-poverty" class="nav-link">A Deep Dive into Poverty</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dataset" class="nav-link">Dataset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#data-dictionary" class="nav-link">Data Dictionary</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gdp-data-africa" class="nav-link">GDP Data (Africa)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#life-expectancy" class="nav-link">Life Expectancy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#country-code" class="nav-link">Country Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tools-to-be-used" class="nav-link">Tools to be used</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#presentation-criteria" class="nav-link">Presentation Criteria</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#presentation-criteria_1" class="nav-link">Presentation Criteria</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="a-deep-dive-into-poverty">A Deep Dive into Poverty</h1>
+<p>Life Expectancy and GDP (Gross Domestic Product) across African Countries</p>
+<p>10Alytics Alumni</p>
+<p>Data Analytics Hackathon
+13-14 May 2023</p>
+<h2 id="introduction">Introduction</h2>
+<p>Africa is a continent that is rich in natural resources, but despite this, it remains one of the most economically and socially challenged regions of the world. Poverty, poor healthcare, and low life expectancy are some of the critical issues that African countries face. Although Africa has made some progress in recent years, these challenges remain persistent and require urgent attention.</p>
+<p>Poverty, life expectancy, and Gross Domestic Product (GDP) are three critical indicators that reflect a country's economic and social conditions. In Africa, these indicators vary widely between countries, making it challenging to understand the complex relationship between poverty, life expectancy, and GDP. This case study aims to provide a deep dive into the correlation between these indicators in African countries.</p>
+<p>Through a data-driven approach, participants will develop insights and recommendations for key government stakeholders on how to improve economic and social conditions in their respective countries. The hackathon will provide a unique opportunity for participants to collaborate, exchange knowledge, and develop innovative solutions to some of the most pressing issues facing African countries today.</p>
+<p>The results of this hackathon will provide valuable insights into the complex relationship between poverty, life expectancy, and GDP in African countries. It will highlight best practices and successful strategies that can be implemented to improve economic and social conditions across the continent. Ultimately, the goal is to promote sustainable economic growth and improve the quality of life for all citizens in Africa.</p>
+<h2 id="dataset">Dataset</h2>
+<p>There are four (4) datasets for this project. The data dictionary containing 
+the features of the data can be found in Slides 4, 5 and 6</p>
+<h2 id="data-dictionary">Data Dictionary</h2>
+<p>Distribution-of-population-between-different-poverty-thresholds-up-to-30-dollars</p>
+<table>
+<thead>
+<tr>
+<th>Country Code</th>
+<th>A three-letter code representing the country where the poverty data was collected. This column is a categorical variable.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Year</td>
+<td>The year when the poverty data was collected. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$40 - total number of people above poverty line</td>
+<td>The total number of people above the poverty line, defined as having a daily income greater than or equal to $40. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$30-$40 - total number of people between poverty lines</td>
+<td>The total number of people living between the poverty lines, defined as having a daily income between $30 and $40. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$20-$30 - total number of people between poverty lines</td>
+<td>The total number of people living between the poverty lines, defined as having a daily income between $20 and $30. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$10-$20 - total number of people between poverty lines</td>
+<td>The total number of people living between the poverty lines, defined as having a daily income between $10 and $20. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$6.85-$10 - total number of people between poverty lines</td>
+<td>The total number of people living between the poverty lines, defined as having a daily income between $6.85 and $10. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$3.65-$6.85 - total number of people between poverty lines</td>
+<td>The total number of people living between the poverty lines, defined as having a daily income between $3.65 and $6.85. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$2.15-$3.65 - total number of people between poverty lines</td>
+<td>The total number of people living between the poverty lines, defined as having a daily income between $2.15 and $3.65. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$1-$2.15 - total number of people between poverty lines</td>
+<td>The total number of people living between the poverty lines, defined as having a daily income between $1 and $2.15. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>$1 - total number of people below poverty line</td>
+<td>The total number of people below the poverty line, defined as having a daily income less than $1. This column is a numerical variable.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gdp-data-africa">GDP Data (Africa)</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Country Code</td>
+<td>A three-letter code representing the country where the poverty data was collected. This column is a categorical variable.</td>
+</tr>
+<tr>
+<td>Indicator Name</td>
+<td>Currency - GDP (current US$)</td>
+</tr>
+<tr>
+<td>1960 -2021</td>
+<td>The year when the GDP data was collected. This column is a numerical variable. GDP is a measure of the total economic output of a country and is often used as an indicator of a country's economic growth and development. This column is a numerical variable.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="life-expectancy">Life Expectancy</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Country Code</td>
+<td>A three-letter code representing the country where the poverty data was collected. This column is a categorical variable.</td>
+</tr>
+<tr>
+<td>Year</td>
+<td>The year when the life expectancy data was collected. This column is a numerical variable.</td>
+</tr>
+<tr>
+<td>Life expectancy at birth (historical)</td>
+<td>The average number of years that a new-born infant can expect to live, based on the historical life expectancy data for the country in the given year. This column is a numerical variable.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="country-code">Country Code</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Country Code</td>
+<td>A three-letter code representing the country where the poverty data was collected. This column is a categorical variable.</td>
+</tr>
+<tr>
+<td>Country Name</td>
+<td>The name of the country. This column is a categorical variable.</td>
+</tr>
+<tr>
+<td>Income Group</td>
+<td>The income group of the country, as defined by the World Bank. Countries are grouped into income categories based on their gross national income (GNI) per capita. The income groups are as follows: low income, lower middle income, upper middle income, and high income. This column is a categorical variable.</td>
+</tr>
+<tr>
+<td>Region</td>
+<td>The region where the country is located in Africa</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tools-to-be-used">Tools to be used</h2>
+<p>Participants are free to use any visualization or analytical tool they prefer for analyzing the data in the case study.</p>
+<p>Here are some examples of tools that can be used:
+Data analysis: Excel, R, Python, SAS, Stata, SPSS
+Data visualization: Tableau, Power BI, QlikView,  ggplot2 (in R)</p>
+<h2 id="presentation-criteria">Presentation Criteria</h2>
+<p>Participants are free to use any tool to present their findings in the hackathon. </p>
+<p>Here are some examples of tools that can be used for the presentation:</p>
+<ul>
+<li>PowerPoint</li>
+<li>Excel</li>
+<li>Power BI</li>
+<li>Tableau</li>
+<li>Python</li>
+<li>etc</li>
+</ul>
+<h2 id="presentation-criteria_1">Presentation Criteria</h2>
+<p><strong>Data Analysis:</strong> </p>
+<ul>
+<li>How well did the participant analyze the provided data? </li>
+<li>Were their findings insightful and relevant? </li>
+<li>Did they use appropriate statistical methods?</li>
+</ul>
+<p><strong>Visualizations:</strong> </p>
+<ul>
+<li>Did the participant create clear and visually appealing data visualizations? </li>
+<li>Did they use the right types of charts and graphs to communicate their findings?</li>
+</ul>
+<p><strong>Interpretation:</strong> </p>
+<ul>
+<li>Did the team effectively interpret their findings? </li>
+<li>Did they draw appropriate conclusions and insights from the data?</li>
+</ul>
+<p><strong>Creativity:</strong> </p>
+<ul>
+<li>Did the participant approach the problem with a creative and innovative mindset? </li>
+<li>Did they think outside the box in their analysis and presentation?</li>
+</ul>
+<p><strong>Clarity:</strong> </p>
+<ul>
+<li>Was the presentation clear and easy to understand? </li>
+<li>Did the participant communicate their findings effectively and concisely?</li>
+</ul>
+<p><strong>Impact:</strong> </p>
+<ul>
+<li>Did the participant findings have a significant impact on the problem at hand? </li>
+<li>Did they provide valuable insights and recommendations for key stakeholders?</li>
+</ul>
+<p><strong>Technical Ability:</strong> </p>
+<ul>
+<li>How well did the participant use the tools and technologies at their disposal? </li>
+<li>Were their methods sound and effective?</li>
+</ul>
+<h3 id="area-of-concentration">Area of Concentration</h3>
+<p>Provide your recommendation to the case study
+Include the limitations of the dataset and how you think your analysis can be further enriched
+Be ready to discuss your insights and share what you learned working on the datasets
+All the best!!</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
