@@ -3,3 +3,4 @@ site_name: My Docs
 nav:
   - Home: index.md
   - Case Study: case_study.md
+  - Life Expectancy: life_expectancy.md
