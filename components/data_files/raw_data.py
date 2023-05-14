@@ -12,12 +12,17 @@ def read_excel_files():
         print(file_name, df.head())
         print(df.describe())
 
+
 def read_csv_files():
     for file_name in EXCEL_FILE_NAMES:
         file = file_name + ".csv"
         df = pd.read_csv(os.path.join(DATA_DIR, file))
         print(file_name, df.head())
         print(df.describe())
+
+
+def reading_csv(name):
+    return pd.read_csv(os.path.join(DATA_DIR, name + ".csv"))
 
 
 if __name__ == "__main__":
